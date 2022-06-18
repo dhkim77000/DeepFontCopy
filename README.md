@@ -21,10 +21,11 @@ I set the model to generate 26 upper alphabets from 5 characters, but the model 
 ##### Example
 
 REAL
-![image](https://user-images.githubusercontent.com/89527573/174424602-a8ad9549-182c-4408-961f-e09c01a1a684.png)
+![image](https://user-images.githubusercontent.com/89527573/174424610-3c9edb5d-05f6-48e8-8abc-2d41eabc5e16.png)
 
 FAKE(from 5 characters)
-![image](https://user-images.githubusercontent.com/89527573/174424610-3c9edb5d-05f6-48e8-8abc-2d41eabc5e16.png)
+![image](https://user-images.githubusercontent.com/89527573/174424660-5bf0d7d7-c1eb-4538-ae37-f4ca626da19e.png)
+
 
 
 ## Postprocess
