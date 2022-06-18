@@ -16,7 +16,30 @@ A page from the speakeasy magazine
 ---
 ![image](https://user-images.githubusercontent.com/89527573/174338509-4dde91e4-fe57-45dd-b7f6-7650068dd802.png)
 The structure of the program is like this. The program segmentates the text from the given image and after some process, feed them as the input of GAN models.
-![image](https://user-images.githubusercontent.com/89527573/174338555-87736fb1-3761-48ca-b519-a3bac84cc185.png)
+I set the model to generate 26 upper alphabets from 5 characters, but the model is also capable to generate 52 upper and lower alphabets if you adjust some options.
+
+##### Example
+
+REAL
+![image](https://user-images.githubusercontent.com/89527573/174424602-a8ad9549-182c-4408-961f-e09c01a1a684.png)
+
+FAKE(from 5 characters)
+![image](https://user-images.githubusercontent.com/89527573/174424610-3c9edb5d-05f6-48e8-8abc-2d41eabc5e16.png)
+
+
+## Postprocess
+---
+remove background and segmentate the text from image | segmentation.py
+classificate the characters segmentated from the image | classify.py
+create dataset for the GAN model | dataset_gen.py
+##### NOTE
+you have to check the dataset before running the GAN model.(Since segmentation is done by basic image processing, its accuracy is sometime not good enough.)
+
+## Training
+
+mc-gan-master/scripts/train_StackGAN.sh [image folder]
+mc-gan-master/scripts/test_StackGAN.sh [image folder]
+
 # Results
 ---
 ## Le Labo
@@ -28,5 +51,5 @@ The structure of the program is like this. The program segmentates the text from
 ![image](https://user-images.githubusercontent.com/89527573/174338950-89be36a3-3bbf-47b1-8ead-2775017bfb45.png)
 
 ## Basquiat
-![image](https://user-images.githubusercontent.com/89527573/174339034-702536dd-f900-42f3-9a82-b1d15ee6c550.png)
+![image](https://user-images.githubusercontent.com/89527573/174424518-6c5a57aa-9941-46db-88f6-59178c96b0a8.png)
 ![image](https://user-images.githubusercontent.com/89527573/174339048-6c6359c4-2918-4a88-b012-e8b83fa4cd23.png)
